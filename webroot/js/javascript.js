@@ -34,19 +34,19 @@ window.onload = function() {
 	});
 
 	$("select").change(function() {
-		if($(this).val() == "memoria"){
+		if($(this).val() == 2){
 			$("#newPublication").load("nueva_memoria");
 			$("#newPublication").show();
 		}else{
-			if($(this).val() == "evento"){
+			if($(this).val() == 1){
 				$("#newPublication").load("nuevo_evento");
 				$("#newPublication").show();
 			}else{
-				if($(this).val() == "articulo"){
+				if($(this).val() == 3){
 					$("#newPublication").load("nuevo_articulo");
 					$("#newPublication").show();
 				}else{
-					if($(this).val() == "proyecto"){
+					if($(this).val() == 4){
 						$("#newPublication").load("nuevo_proyecto");
 						$("#newPublication").show();
 					}else{
