@@ -32,7 +32,7 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-<<<<<<< HEAD
+
     public $components = array(
         'Session',
         'Auth' => array(
@@ -45,7 +45,5 @@ class AppController extends Controller {
         $this->Auth->allow('index', 'view');
         $this->Auth->allow('display','home');
         $this->Auth->allow('users','newuser');
-    }	
-=======
->>>>>>> e352ef44a9efcd0665b8bdc4d48c9a3ac1cc052e
+    }
 }
