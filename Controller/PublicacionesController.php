@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  */
 class PublicacionesController extends AppController {
 
-	var $uses = array('Publicacione', 'Evento', 'Memoria', 'Articulo', 'Proyecto');
+	var $uses = array('Publicacione', 'Evento', 'Memoria', 'Articulo', 'Proyecto', 'Usuario');
 
 /**
  * index method
@@ -110,13 +110,24 @@ class PublicacionesController extends AppController {
 
 	public function nuevo_evento() {}
 
-	public function nueva_memoria(){}
+	public function nueva_memoria(){
+		$answer = $this->Usuario->find('all', array(
+			'fields' => array(
+				'Usuario.nombre1', 'Usuario.nombre2', 'Usuario.apellido1', 'Usuario.apellido2'
+				),
+			));
+		die($answer[0]['Usuario']['nombre1']);
+		$this->set('hola', 'jajaja');
+	}
 
 	public function nuevo_proyecto(){}
 
 	public function nuevo_articulo(){}
 
-	public function eventos(){}
+	public function eventos(){
+		$answer = $this->Publicacione->find('all');
+		//die($answer[11]['Publicacione']['id']);
+	}
 
 	public function articulos(){}
 

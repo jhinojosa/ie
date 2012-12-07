@@ -27,7 +27,7 @@ $this->layout = null;
 		<label class="control-label">Autor</label>
 		<div class="controls">
 			<select>
-				<option></option>
+				<option><?php echo $hola; ?></option>
 			</select>
 		</div>
 	</div>
