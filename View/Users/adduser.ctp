@@ -61,17 +61,19 @@
         /*));*/
     ?>
     <!--</fieldset>-->
-	<?php 
-		echo $this->Form->submit( 'Agregar', array( 
-			'value' => 'agregar', 
-			'div' => false, 
-			'class' => 'btn btn-primery', 
-			'id' => 'adduserbutton'
-			));
-		echo $this->Form->input( 'Cancelar', array(
-			'label' => false,
-			'type' => 'button',
-			'class' => 'btn',
-			));
-	?>
+    <div id="btnSubmit">
+		<?php 
+			echo $this->Form->submit( 'Agregar', array( 
+				'value' => 'agregar', 
+				'div' => false, 
+				'class' => 'btn btn-primery', 
+				'id' => 'adduserbutton'
+				));
+			echo $this->Form->input( 'Cancelar', array(
+				'label' => false,
+				'type' => 'button',
+				'class' => 'btn',
+				));
+		?>
+	</div>
 </div>
