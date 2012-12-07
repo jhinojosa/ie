@@ -47,19 +47,29 @@
 <?php echo $this->Form->create('User'); ?>
     <!--<fieldset>-->
         <!--<legend><?php  echo __('Nuevo usuario'); ?></legend>-->
-        <?php 
-	        echo $this->Form->input('username', array( 
-	        	'label' => 'Nombre de usuario'
-	        	));
-	        echo $this->Form->input('password', array(
-	        	'type'=>'password',
-	        	'label'=>'Contraseña'
-	        	));
-
-        //echo $this->Form->input('Rol: ', array(
-            //'options' => array('admin' => 'Administrador', 'author' => 'Miembro')
-        /*));*/
-    ?>
+    <div class="control-group">
+    	<label class="control-label">Primer nombre</label>
+    	<div class="controls">
+		    <?php 
+		        echo $this->Form->input('nomre1', array( 
+		        	'label' => false,
+		        	'type' => 'text',
+		        	'placeholder' => 'Ej: Juan'
+		        	));
+		    ?>
+		</div>
+	</div>
+    <div class="control-group">
+    	<label class="control-label">Contraseña</label>
+    	<div class="controls">		
+			<?php	        
+		        echo $this->Form->input('password', array(
+		        	'type'=>'password',
+		        	'label'=>false
+		        	));
+		    ?>
+		</div>
+	</div>
     <!--</fieldset>-->
     <div id="btnSubmit">
 		<?php 

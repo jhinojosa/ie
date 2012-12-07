@@ -74,9 +74,13 @@
 			<li><a href="ayuda">Ayuda</a></li>
 			<li><a href="#"><i class="icon-chevron-down"></i>Usuarios</a>
 				<ul class="nav nav-list affix-top sublist">
+<<<<<<< HEAD
 					<li><?php 
 					echo $this->Html->link('Nuevo usuario', array('controller'=>'users', 'action'=>'adduser')); 
 					?></li>
+=======
+					<li><a href="nuevo_usuario">Nuevo usuario</a></li>
+>>>>>>> e352ef44a9efcd0665b8bdc4d48c9a3ac1cc052e
 					<li><a href="administrar_usuarios">Administrar usuarios</a></li>
 					<li><a href="configurar_cuenta">Configurar cuenta</a></li>
 					<li><a href="#">Mi perfil</a></li>

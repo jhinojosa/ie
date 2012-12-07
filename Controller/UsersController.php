@@ -26,7 +26,7 @@ class UsersController extends AppController {
     public function adduser() {        
         //die("asasdad");
         if ($this->request->is('post')) {
-            die("post");
+            die("aeweeee");
             //die($this->request->data['User']['username']);
             $this->User->create();
             if ($this->User->save($this->request->data)) {

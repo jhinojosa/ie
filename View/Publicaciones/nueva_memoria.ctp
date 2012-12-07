@@ -27,7 +27,11 @@ $this->layout = null;
 		<label class="control-label">Autor</label>
 		<div class="controls">
 			<select>
+<<<<<<< HEAD
 				<option></option>
+=======
+				<option><?php echo $hola; ?></option>
+>>>>>>> e352ef44a9efcd0665b8bdc4d48c9a3ac1cc052e
 			</select>
 		</div>
 	</div>
